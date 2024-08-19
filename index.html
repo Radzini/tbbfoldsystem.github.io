@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old XP Level Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>XP Level Calculator</h1>
+        <div class="input-group">
+            <label for="xpInput">XP (in millions, type between 1-1000):</label>
+            <input type="number" id="xpInput" min="1" step="1" value="10">
+        </div>
+        <div class="input-group">
+            <label for="formulaSelect">Choose Formula:</label>
+            <select id="formulaSelect">
+                <option value="multiply">Calyx</option>
+                <option value="divide">Shrimp</option>
+            </select>
+        </div>
+        <button id="calculateBtn">Calculate</button>
+        <div id="resultContainer" class="result"></div>
+        <div class="note">
+            <p><strong>Note: that It's not 100% accurate It will show the first 3 letters most of the time</strong></p>
+            <ul>
+                <li>1 = 1m</li>
+                <li>10 = 10m</li>
+                <li>100 = 100m</li>
+                <li>1000 = 1b</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
